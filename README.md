@@ -47,6 +47,26 @@ Minitutorial sobre como usar o Supremica.
 
 ## Criando um Autômato Finito
 
+1. **Crie um módulo:**
+   - Abra o Supremica e clique em `File > New `
+
+2. **Crie uma Automato**.
+   - Clique em `Create > New Automaton`
+   - Digite o nome do automato 
+   - Escolha o tipo (Kind) do automato como Planta (Plant).
+   - Clique em `OK`
+
+3. **Adicione estados e transições:**
+   - Para adicionar um estado, clique no botao `circulo preto` do menu superior e clique nos pontos da malha quadriculada onde você deseja colocar os estados.
+   - Para adicionar uma transição primeiro clique no botao `circulo-seta-circulo`, perto do botao de colocar estados, depois clique no primeiro estado (estado inicial) e arraste a seta que aparecer até um outro estado (estado final).
+   - Você também pode adicionar uma transição para o mesmo estado clicando duas vezes no mesmo estado.
+
+4. **Defina os estados marcados:**
+   - Para definir os estados marcados, clique com **botão direito** no estado que você deseja marcar, selecione `Marking`, e por fim `accepting` (aceitação) ou `forbidden` (proibido).
+
+5.  **Salve seu projeto:**
+   - Quando terminar de criar seu autômato, vá para o menu `File` e selecione `Save` para salvar seu projeto.
+
 ## Guardas e Ações no Supremica
 
 ## Autômato Finito Extendido no Supremica
