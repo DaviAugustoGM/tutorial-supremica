@@ -40,13 +40,44 @@ Minitutorial sobre como usar o Supremica.
     
    O estado de algo pode ser uma variável e seus valores são mudadas pelas ações e monitoradas pelos guardas. Eventos podem ser controlados por certos estados das variáveis a partir dos guardas.
    
-6. Planta:
+6. Planta:\
+   É o modelo do sistema que você deseja controlar. Ele representa o comportamento do sistema real que você deseja controlar. O modelo Plant é usado para gerar um controlador que pode ser implementado no sistema real.
    
-7. Especificação:
-
+7. Especificação:\
+   É uma descrição formal das propriedades que o controlador deve satisfazer. O modelo Specification é usado para verificar se o controlador gerado a partir do modelo Plant satisfaz as propriedades especificadas.
 
 ## Criando um Autômato Finito
 
+1. **Crie um módulo:**
+   - Abra o Supremica e clique em `File > New `
+
+2. **Crie uma Automato**.
+   - Clique em `Create > New Automaton`
+   - Digite o nome do automato 
+   - Escolha o tipo (Kind) do automato como Planta (Plant).
+   - Clique em `OK`
+
+3. **Adicione estados e transições:**
+   - Para adicionar um estado, clique no botao `circulo preto` do menu superior e clique nos pontos da malha quadriculada onde você deseja colocar os estados.
+   - Para adicionar uma transição primeiro clique no botao `circulo-seta-circulo`, perto do botao de colocar estados, depois clique no primeiro estado (estado inicial) e arraste a seta que aparecer até um outro estado (estado final).
+   - Você também pode adicionar uma transição para o mesmo estado clicando duas vezes no mesmo estado.
+
+4. **Defina os estados marcados:**
+   - Para definir os estados marcados, clique com **botão direito** no estado que você deseja marcar, selecione `Marking`, e por fim `accepting` (aceitação) ou `forbidden` (proibido).
+
+5.  **Salve seu projeto:**
+   - Quando terminar de criar seu autômato, vá para o menu `File` e selecione `Save` para salvar seu projeto.
+
 ## Guardas e Ações no Supremica
 
+- As Guardas e Ações são elementos fundamentais na modelagem de sistemas de eventos discretos. As guardas são condições que devem ser satisfeitas para que uma transição ocorra, enquanto as ações são as operações que ocorrem quando uma transição é disparada.
+
+- Para adicionar Guardas e Ações em um autômato, você precisa seguir os seguintes passos:
+   1. Abra o software Supremica e crie um novo modelo de autômato.
+   2. Adicione os estados e as transições do automato.
+   3. Clique duas vezes na transição em que você deseja adicionar a guarda.
+   4. Para adicionar a guarda coloque a condição a ser satisfeita para que a transição ocorra na primeira caixa de texto. A condição pode ser a de uma variável alcançar um determinado valor.
+   5. Para adicionar uma Ação, adicione uma operação na segunda caixa de texto. Pode ser a atribuição de um valor a uma variável, por exemplo, e clique em `OK`.
+
 ## Autômato Finito Extendido no Supremica
+   - Para criar uma automato estendido no supremica, crie um automato e adicione guardas, ações e variáveis, como descrito anteriormente.
